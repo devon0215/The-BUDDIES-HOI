@@ -1,11 +1,17 @@
 ﻿capital = 187
 
-# Starting tech
+set_research_slots = 0
+
+set_stability = 0
+
+set_war_support = 0
+
 set_technology = {
-	infantry_weapons = 1
 }
 
 set_convoys = 0
+
+recruit_character = BUD_Saucy_Salmon
 
 set_politics = {
 	ruling_party = neutrality
@@ -20,5 +26,3 @@ set_popularities = {
 	communism = 17
 	neutrality = 38
 }
-
-recruit_character = BUD_Saucy_Salmon
