@@ -2,7 +2,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_Portrait_Large_BUDDIES_Saucy_Salmon"
-		texturefile = "TheBUDDIESPack/gfx/leaders/BUD/Portrait_Large_BUDDIES_Saucy_Salmon.dds"
+		texturefile = "gfx/leaders/BUD/Portrait_Large_BUDDIES_Saucy_Salmon.dds"
 	}
 
 }

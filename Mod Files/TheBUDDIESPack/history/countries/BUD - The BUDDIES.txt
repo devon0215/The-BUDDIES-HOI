@@ -26,3 +26,5 @@ set_popularities = {
 	communism = 17
 	neutrality = 38
 }
+
+oob = "BUD_1936"
