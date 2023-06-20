@@ -1,6 +1,6 @@
 characters = {
     BUD_Saucy_Salmon = {
-        name = "Saucy Salmon"
+        name = BUD_Character_Saucy_Salmon
         portraits = {
             civilian = {
                 large = GFX_Portrait_Large_BUDDIES_Saucy_Salmon

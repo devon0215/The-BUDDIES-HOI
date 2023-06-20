@@ -1,0 +1,26 @@
+focus_tree = {
+    id = BUD_Focus_Tree
+    country = {
+        base = 0
+        modifier = {
+            add = 100
+            original_tag = BUD
+        }
+    }
+    continuous_focus_position = { x = 0 y = 1000 }
+    initial_show_position = { focus = BUD_Focus_What_Now }
+
+    focus = {
+        id = BUD_Focus_What_Now
+        x = 15
+        y = 0
+        icon = GFX_focus_generic_self_management
+        cost = 5
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+}
