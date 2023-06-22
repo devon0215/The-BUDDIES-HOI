@@ -1,7 +1,7 @@
 ideas = {
     country = {
         BUD_Modern_Equipment = {
-            picture = GFX_idea_HUN_secret_rearmament
+            picture = HUN_secret_rearmament
 
             allowed = {
                 tag = BUD
