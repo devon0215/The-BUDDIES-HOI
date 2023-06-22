@@ -16,9 +16,6 @@ focus_tree = {
         y = 0
         icon = GFX_focus_generic_self_management
         cost = 1
-        search_filters = {
-            FOCUS_FILTER_POLITICAL
-        }
         completion_reward = {
             add_political_power = 50
         }
@@ -30,14 +27,24 @@ focus_tree = {
         y = 1
         relative_position_id = BUD_Focus_Lost_In_Time
         icon = GFX_focus_generic_manpower
-        cost = 10
+        cost = 5
         prerequisite = { focus = BUD_Focus_Lost_In_Time }
-        search_filters = {
-            FOCUS_FILTER_MANPOWER
-        }
         completion_reward = {
             add_ideas = BUD_Modern_Equipment
             add_manpower = 10000
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_Core
+        x = 0
+        y = 1
+        relative_position_id = BUD_Focus_Reinforcements
+        icon = REPLACE_ME
+        cost = 5
+        prerequisite = { focus = BUD_Focus_Reinforcements }
+        completion_reward = {
+            REPLACE_ME
         }
     }
 }
