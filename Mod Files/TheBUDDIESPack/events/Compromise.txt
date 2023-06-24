@@ -1,0 +1,23 @@
+add_namespace = BUD_Event_Compromise
+
+country_event = {
+    id = BUD_Event_Compromise.1
+    title = BUD_Event_Compromise.1.t
+    desc = BUD_Event_Compromise.1.d
+    is_triggered_only = yes
+
+    option = {
+        name = BUD_Event_Compromise.1.a
+        complete_national_focus = BUD_Focus_Greek_Resources
+    }
+
+    option = {
+        name = BUD_Event_Compromise.1.b
+        complete_national_focus = BUD_Focus_Greek_Pact
+    }
+
+    option = {
+        name = BUD_Event_Compromise.1.c
+        complete_national_focus = BUD_Focus_Greek_Puppet
+    }
+}

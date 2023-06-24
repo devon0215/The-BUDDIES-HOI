@@ -12,7 +12,7 @@ focus_tree = {
 
     focus = {
         id = BUD_Focus_Lost_In_Time
-        x = 15
+        x = 25
         y = 0
         icon = GFX_focus_generic_self_management
         cost = 1
@@ -27,24 +27,132 @@ focus_tree = {
         y = 1
         relative_position_id = BUD_Focus_Lost_In_Time
         icon = GFX_focus_generic_manpower
-        cost = 5
+        cost = 1
         prerequisite = { focus = BUD_Focus_Lost_In_Time }
         completion_reward = {
             add_ideas = BUD_Modern_Equipment
             add_manpower = 10000
+
         }
     }
 
     focus = {
-        id = BUD_Focus_Core
+        id = BUD_Focus_Claim_Aegean
         x = 0
         y = 1
         relative_position_id = BUD_Focus_Reinforcements
-        icon = REPLACE_ME
-        cost = 5
+        icon = GFX_focus_generic_support_the_left_right
+        cost = 1
         prerequisite = { focus = BUD_Focus_Reinforcements }
         completion_reward = {
-            REPLACE_ME
+            add_state_claim = 187
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_Dealing_With_Greece
+        x = 0
+        y = 1
+        relative_position_id = BUD_Focus_Claim_Aegean
+        icon = GFX_focus_GRE_bedrock_of_balkan_stability
+        cost = 1
+        prerequisite = { focus = BUD_Focus_Claim_Aegean }
+        completion_reward = {
+            country_event = {
+                id = BUD_Event_Dealing_With_Greece.1
+                days = 1
+            }
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_No_Compromise
+        x = -2
+        y = 1
+        relative_position_id = BUD_Focus_Dealing_With_Greece
+        icon = GFX_focus_generic_attack_greece
+        prerequisite = { focus = BUD_Focus_Dealing_With_Greece }
+        mutually_exclusive = { focus = BUD_Focus_Compromise }
+        available = {
+            always = no
+        }
+        completion_reward = {
+            add_state_core = 187
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_Compromise
+        x = 2
+        y = 1
+        relative_position_id = BUD_Focus_Dealing_With_Greece
+        icon = GFX_focus_generic_befriend_greece
+        prerequisite = { focus = BUD_Focus_Dealing_With_Greece }
+        mutually_exclusive = { focus = BUD_Focus_No_Compromise }
+        available = {
+            always = no
+        }
+        completion_reward = {
+            country_event = {
+                id = BUD_Event_Compromise.1
+                days = 1
+            }
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_Greek_Resources
+        x = 2
+        y = 1
+        relative_position_id = BUD_Focus_Compromise
+        icon = GFX_goal_generic_trade
+        prerequisite = { focus = BUD_Focus_Compromise }
+        mutually_exclusive = { focus = BUD_Focus_Greek_Puppet focus = BUD_Focus_Greek_Pact}
+        available = {
+            always = no
+        }
+        completion_reward = {
+            give_resource_rights = {
+                receiver = GRE
+                state = 187
+            }
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_Greek_Pact
+        x = 4
+        y = 1
+        relative_position_id = BUD_Focus_Compromise
+        icon = GFX_focus_generic_treaty
+        prerequisite = { focus = BUD_Focus_Compromise }
+        mutually_exclusive = { focus = BUD_Focus_Greek_Puppet focus = BUD_Focus_Greek_Resources}
+        available = {
+            always = no
+        }
+        completion_reward = {
+            give_guarantee = GRE
+            GRE = {
+                give_guarantee = BUD
+            }
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_Greek_Puppet
+        x = 6
+        y = 1
+        relative_position_id = BUD_Focus_Compromise
+        icon = GFX_focus_CZE_german_puppet
+        prerequisite = { focus = BUD_Focus_Compromise }
+        mutually_exclusive = { focus = BUD_Focus_Greek_Resources focus = BUD_Focus_Greek_Pact }
+        available = {
+            always = no
+        }
+        completion_reward = {
+            GRE = {
+                puppet = BUD
+            }
         }
     }
 }
