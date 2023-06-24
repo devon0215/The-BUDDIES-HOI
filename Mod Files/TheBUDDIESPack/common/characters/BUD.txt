@@ -4,10 +4,46 @@ characters = {
         portraits = {
             civilian = {
                 large = GFX_Portrait_Large_BUDDIES_Saucy_Salmon
+                small = GFX_Portrait_Small_BUDDIES_Saucy_Salmon
             }
         }
         country_leader = {
             ideology = despotism
+            traits = { BUD_Trait_Saucy_Salmon }
+            desc = BUD_Character_Saucy_Salmon_desc
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = BUD_Character_Saucy_Salmon
+            ledger = civilian
+            traits = { BUD_Trait_Saucy_Salmon }
+            available = {
+                is_country_leader = no
+            }
+        }
+    }
+
+    BUD_Devon = {
+        name = BUD_Character_Devon
+        portraits = {
+            civilian = {
+                large = REPLACE_ME
+                small = REPLACE_ME
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = { BUD_Trait_Devon }
+            desc = BUD_Character_Devon_desc
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = BUD_Character_Devon
+            ledger = civilian
+            traits = { BUD_Trait_Devon }
+            available = {
+                is_country_leader = no
+            }
         }
     }
 }
