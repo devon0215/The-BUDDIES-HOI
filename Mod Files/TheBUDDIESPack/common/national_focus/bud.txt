@@ -7,7 +7,7 @@ focus_tree = {
             original_tag = BUD
         }
     }
-    continuous_focus_position = { x = 0 y = 1000 }
+    continuous_focus_position = { x = 0 y = 100 }
     initial_show_position = { focus = BUD_Focus_Lost_In_Time }
 
     focus = {
@@ -71,8 +71,28 @@ focus_tree = {
         y = 1
         relative_position_id = BUD_Focus_Dealing_With_Greece
         icon = GFX_focus_generic_attack_greece
+        cost = 1
         prerequisite = { focus = BUD_Focus_Dealing_With_Greece }
         mutually_exclusive = { focus = BUD_Focus_Compromise }
+        available = {
+            always = no
+        }
+        completion_reward = {
+            country_event = {
+                id = BUD_Event_No_Compromise.1
+                days = 1
+            }
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_Core_Aegean
+        x = -2
+        y = 1
+        relative_position_id = BUD_Focus_No_Compromise
+        icon = GFX_focus_generic_annex_country_2
+        cost = 1
+        prerequisite = { focus = BUD_Focus_No_Compromise }
         available = {
             always = no
         }
@@ -87,6 +107,7 @@ focus_tree = {
         y = 1
         relative_position_id = BUD_Focus_Dealing_With_Greece
         icon = GFX_focus_generic_befriend_greece
+        cost = 1
         prerequisite = { focus = BUD_Focus_Dealing_With_Greece }
         mutually_exclusive = { focus = BUD_Focus_No_Compromise }
         available = {
@@ -106,6 +127,7 @@ focus_tree = {
         y = 1
         relative_position_id = BUD_Focus_Compromise
         icon = GFX_goal_generic_trade
+        cost = 1
         prerequisite = { focus = BUD_Focus_Compromise }
         mutually_exclusive = { focus = BUD_Focus_Greek_Puppet focus = BUD_Focus_Greek_Pact}
         available = {
@@ -125,6 +147,7 @@ focus_tree = {
         y = 1
         relative_position_id = BUD_Focus_Compromise
         icon = GFX_focus_generic_treaty
+        cost = 1
         prerequisite = { focus = BUD_Focus_Compromise }
         mutually_exclusive = { focus = BUD_Focus_Greek_Puppet focus = BUD_Focus_Greek_Resources}
         available = {
@@ -144,6 +167,7 @@ focus_tree = {
         y = 1
         relative_position_id = BUD_Focus_Compromise
         icon = GFX_focus_CZE_german_puppet
+        cost = 1
         prerequisite = { focus = BUD_Focus_Compromise }
         mutually_exclusive = { focus = BUD_Focus_Greek_Resources focus = BUD_Focus_Greek_Pact }
         available = {
@@ -152,6 +176,83 @@ focus_tree = {
         completion_reward = {
             GRE = {
                 puppet = BUD
+            }
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_Go_Communist
+        x = -8
+        y = 3
+        relative_position_id = BUD_Focus_No_Compromise
+        icon = GFX_goal_support_communism
+        prerequisite = { focus = BUD_Focus_Core_Aegean focus = BUD_Focus_Greek_Resources focus = BUD_Focus_Greek_Pact focus = BUD_Focus_Greek_Puppet }
+        mutually_exclusive = { focus = BUD_Focus_Go_Fascist focus = BUD_Focus_Go_Neutral focus = BUD_Focus_Go_Democratic }
+        cost = 10
+        completion_reward = {
+            add_popularity = {
+                ideology = communism
+                popularity = 0.5
+            }
+            set_politics = {
+                ruling_party = communism
+            }
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_Go_Fascist
+        x = -2
+        y = 3
+        relative_position_id = BUD_Focus_No_Compromise
+        icon = GFX_goal_support_fascism
+        prerequisite = { focus = BUD_Focus_Core_Aegean focus = BUD_Focus_Greek_Resources focus = BUD_Focus_Greek_Pact focus = BUD_Focus_Greek_Puppet }
+        mutually_exclusive = { focus = BUD_Focus_Go_Communist focus = BUD_Focus_Go_Neutral focus = BUD_Focus_Go_Democratic }
+        cost = 10
+        completion_reward = {
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.5
+            }
+            set_politics = {
+                ruling_party = fascism
+            }
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_Go_Neutral
+        x = 4
+        y = 3
+        relative_position_id = BUD_Focus_No_Compromise
+        icon = GFX_goal_generic_neutrality_focus
+        prerequisite = { focus = BUD_Focus_Core_Aegean focus = BUD_Focus_Greek_Resources focus = BUD_Focus_Greek_Pact focus = BUD_Focus_Greek_Puppet }
+        mutually_exclusive = { focus = BUD_Focus_Go_Communist focus = BUD_Focus_Go_Fascist focus = BUD_Focus_Go_Democratic }
+        cost = 10
+        completion_reward = {
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.25
+            }
+        }
+    }
+
+    focus = {
+        id = BUD_Focus_Go_Democratic
+        x = 6
+        y = 3
+        relative_position_id = BUD_Focus_Compromise
+        icon = GFX_goal_generic_democracy
+        prerequisite = { focus = BUD_Focus_Core_Aegean focus = BUD_Focus_Greek_Resources focus = BUD_Focus_Greek_Pact focus = BUD_Focus_Greek_Puppet }
+        mutually_exclusive = { focus = BUD_Focus_Go_Communist focus = BUD_Focus_Go_Fascist focus = BUD_Focus_Go_Neutral }
+        cost = 10
+        completion_reward = {
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.5
+            }
+            set_politics = {
+                ruling_party = democratic
             }
         }
     }

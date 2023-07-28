@@ -1,0 +1,13 @@
+add_namespace = BUD_Event_No_Compromise
+
+country_event = {
+	id = BUD_Event_No_Compromise.1
+	title = BUD_Event_No_Compromise.1.t
+	desc = BUD_Event_No_Compromise.1.d
+	is_triggered_only = yes
+
+	option = {
+		name = BUD_Event_No_Compromise.1.a
+		complete_national_focus = BUD_Focus_Core_Aegean
+	}
+}
