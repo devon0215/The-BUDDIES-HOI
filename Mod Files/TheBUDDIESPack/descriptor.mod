@@ -1,7 +1,4 @@
 version="1.0"
-dependencies={
-	"The Road to 56"
-}
 tags={
 	"Alternative History"
 }
