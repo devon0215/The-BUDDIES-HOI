@@ -6,20 +6,58 @@ characters = {
                 large = GFX_Portrait_Large_BUDDIES_Saucy_Salmon
                 small = GFX_Portrait_Small_BUDDIES_Saucy_Salmon
             }
+            army = {
+                large = GFX_Portrait_Large_BUDDIES_Saucy_Salmon
+                small = GFX_Portrait_Small_BUDDIES_Saucy_Salmon
+            }
         }
         country_leader = {
             ideology = despotism
-            traits = { BUD_Trait_Saucy_Salmon }
-            desc = BUD_Character_Saucy_Salmon_desc
+            traits = { BUD_Trait_Saucy_Salmon_Leader }
         }
         advisor = {
-            slot = political_advisor
-            idea_token = BUD_Character_Saucy_Salmon
-            ledger = civilian
-            traits = { BUD_Trait_Saucy_Salmon }
-            available = {
-                is_country_leader = no
+            slot = army_chief
+            idea_token = BUD_Character_Saucy_Salmon_Army_Chief
+            traits = { BUD_Trait_Saucy_Salmon_Army_Chief }
+        }
+        advisor = {
+            slot = navy_chief
+            idea_token = BUD_Character_Saucy_Salmon_Navy_Chief
+            traits = { BUD_Trait_Saucy_Salmon_Navy_Chief }
+        }
+    }
+
+    BUD_Saucy_Salmon_Field_Marshal = {
+        name = BUD_Field_Marshal_Saucy_Salmon
+        portraits = {
+            army = {
+                large = GFX_Portrait_Large_BUDDIES_Saucy_Salmon
             }
+        }
+        field_marshal = {
+            traits = { reckless media_personality }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 2
+        }
+    }
+
+    BUD_Saucy_Salmon_Navy_Leader = {
+        name = BUD_Navy_Leader_Saucy_Salmon
+        portraits = {
+            army = {
+                large = GFX_Portrait_Large_BUDDIES_Saucy_Salmon
+            }
+        }
+        navy_leader = {
+            traits = { bold navy_media_personality }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 1
+            maneuvering_skill = 2
+            coordination_skill = 1
         }
     }
 
@@ -27,23 +65,95 @@ characters = {
         name = BUD_Character_Devon
         portraits = {
             civilian = {
-                large = REPLACE_ME
-                small = REPLACE_ME
+                large = GFX_Portrait_Large_BUDDIES_Devon
+                small = GFX_Portrait_Small_BUDDIES_Devon
+            }
+            army = {
+                large = GFX_Portrait_Large_BUDDIES_Devon
+                small = GFX_Portrait_Small_BUDDIES_Devon
             }
         }
         country_leader = {
             ideology = liberalism
-            traits = { BUD_Trait_Devon }
-            desc = BUD_Character_Devon_desc
+            traits = { BUD_Trait_Devon_Leader }
         }
         advisor = {
             slot = political_advisor
-            idea_token = BUD_Character_Devon
-            ledger = civilian
-            traits = { BUD_Trait_Devon }
-            available = {
-                is_country_leader = no
+            idea_token = BUD_Character_Devon_Advisor
+            traits = { BUD_Trait_Devon_Advisor }
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = BUD_Character_Devon_Army_Chief
+            traits = { BUD_Trait_Devon_Army_Chief }
+        }
+        advisor = {
+            slot = air_chief
+            idea_token = BUD_Character_Devon_Air_Chief
+            traits = { BUD_Trait_Devon_Air_Chief }
+        }
+        advisor = {
+            slot = navy_chief
+            idea_token = BUD_Character_Devon_Navy_Chief
+            traits = { BUD_Trait_Devon_Navy_Chief }
+        }
+    }
+
+    BUD_Devon_Field_Marshal = {
+        name = BUD_Field_Marshal_Devon
+        portraits = {
+            army = {
+                large = GFX_Portrait_Large_BUDDIES_Devon
             }
+        }
+        field_marshal = {
+            traits = { inflexible_strategist trait_cautious }
+            skill = 4
+            attack_skill = 1
+            defense_skill = 4
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+
+    BUD_Devon_Navy_Leader = {
+        name = BUD_Navy_Leader_Devon
+        portraits = {
+            army = {
+                large = GFX_Portrait_Large_BUDDIES_Devon
+            }
+        }
+        navy_leader = {
+            traits = { chief_engineer }
+            skill = 5
+            attack_skill = 2
+            defense_skill = 5
+            maneuvering_skill = 4
+            coordination_skill = 5
+        }
+    }
+
+    BUD_Strawberry = {
+        name = BUD_Character_Strawberry
+        portraits = {
+            army = {
+                large = GFX_Portrait_Large_BUDDIES_Strawberry
+                small = GFX_Portrait_Small_BUDDIES_Strawberry
+            }
+        }
+        advisor = {
+            slot = high_command
+            idea_token = BUD_Character_Strawberry_High_Command
+            ledger = army
+            traits = { BUD_Trait_Strawberry_High_Command }
+        }
+        corps_commander = {
+            traits = { old_guard infantry_officer }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 2
         }
     }
 }

@@ -190,10 +190,6 @@ focus_tree = {
         mutually_exclusive = { focus = BUD_Focus_Go_Fascist focus = BUD_Focus_Go_Neutral focus = BUD_Focus_Go_Democratic }
         cost = 10
         completion_reward = {
-            add_popularity = {
-                ideology = communism
-                popularity = 0.5
-            }
             set_politics = {
                 ruling_party = communism
             }
@@ -210,10 +206,6 @@ focus_tree = {
         mutually_exclusive = { focus = BUD_Focus_Go_Communist focus = BUD_Focus_Go_Neutral focus = BUD_Focus_Go_Democratic }
         cost = 10
         completion_reward = {
-            add_popularity = {
-                ideology = fascism
-                popularity = 0.5
-            }
             set_politics = {
                 ruling_party = fascism
             }
@@ -230,10 +222,7 @@ focus_tree = {
         mutually_exclusive = { focus = BUD_Focus_Go_Communist focus = BUD_Focus_Go_Fascist focus = BUD_Focus_Go_Democratic }
         cost = 10
         completion_reward = {
-            add_popularity = {
-                ideology = neutrality
-                popularity = 0.25
-            }
+            add_political_power = 50
         }
     }
 
@@ -242,15 +231,11 @@ focus_tree = {
         x = 6
         y = 3
         relative_position_id = BUD_Focus_Compromise
-        icon = GFX_goal_generic_democracy
+        icon = GFX_goal_support_democracy
         prerequisite = { focus = BUD_Focus_Core_Aegean focus = BUD_Focus_Greek_Resources focus = BUD_Focus_Greek_Pact focus = BUD_Focus_Greek_Puppet }
         mutually_exclusive = { focus = BUD_Focus_Go_Communist focus = BUD_Focus_Go_Fascist focus = BUD_Focus_Go_Neutral }
         cost = 10
         completion_reward = {
-            add_popularity = {
-                ideology = democratic
-                popularity = 0.5
-            }
             set_politics = {
                 ruling_party = democratic
             }

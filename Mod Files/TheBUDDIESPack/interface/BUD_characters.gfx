@@ -10,4 +10,23 @@ spriteTypes = {
 		texturefile = "gfx/leaders/BUD/Portrait_Small_BUDDIES_Saucy_Salmon.dds"
 	}
 
+	spriteType = {
+		name = "GFX_Portrait_Large_BUDDIES_Devon"
+		texturefile = "gfx/leaders/BUD/Portrait_Large_BUDDIES_Devon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Small_BUDDIES_Devon"
+		texturefile = "gfx/leaders/BUD/Portrait_Small_BUDDIES_Devon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Large_BUDDIES_Strawberry"
+		texturefile = "gfx/leaders/BUD/Portrait_Large_BUDDIES_Strawberry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Small_BUDDIES_Strawberry"
+		texturefile = "gfx/leaders/BUD/Portrait_Small_BUDDIES_Strawberry.dds"
+	}
 }

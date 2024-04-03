@@ -12,7 +12,12 @@ set_technology = {
 set_convoys = 0
 
 recruit_character = BUD_Saucy_Salmon
+recruit_character = BUD_Saucy_Salmon_Field_Marshal
+recruit_character = BUD_Saucy_Salmon_Navy_Leader
 recruit_character = BUD_Devon
+recruit_character = BUD_Devon_Field_Marshal
+recruit_character = BUD_Devon_Navy_Leader
+recruit_character = BUD_Strawberry
 
 set_politics = {
 	ruling_party = neutrality

@@ -1,3 +1,10 @@
 ﻿l_english:
-  BUD_Trait_Saucy_Salmon: "A Saucy Salmon"
-  BUD_Trait_Devon: "Spreadsheet Man"
+  BUD_Trait_Saucy_Salmon_Leader: "A Saucy Salmon"
+  BUD_Trait_Saucy_Salmon_Army_Chief: "Spends all the money on..."
+  BUD_Trait_Saucy_Salmon_Navy_Chief: "Reckless"
+  BUD_Trait_Devon_Advisor: "Spreadsheet man"
+  BUD_Trait_Devon_Leader: "Too nice"
+  BUD_Trait_Devon_Army_Chief: "Slow and methodical"
+  BUD_Trait_Devon_Air_Chief: "Safety manager"
+  BUD_Trait_Devon_Navy_Chief: "Coordinator"
+  BUD_Trait_Strawberry_High_Command: "Berry"
