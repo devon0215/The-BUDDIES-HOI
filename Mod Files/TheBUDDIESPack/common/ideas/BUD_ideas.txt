@@ -1,5 +1,74 @@
 ideas = {
     country = {
+        BUD_No_Military = {
+            picture = GFX_idea_generic_neglected_military
+
+            allowed = {
+                tag = BUD
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            modifier = {
+                conscription_factor = -1.0
+                experience_gain_army_factor = -1.0
+                experience_gain_navy_factor = -1.0
+                experience_gain_air_factor = -1.0
+                max_command_power_mult = -1.0
+            }
+        }
+        BUD_No_Industry = {
+            picture = GFX_idea_chi_hyper_inflation
+
+            allowed = {
+                tag = BUD
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            modifier = {
+                production_speed_buildings_factor = -1.0
+                consumer_goods_factor = 1.0
+                industrial_capacity_factory = -1.0
+                industrial_capacity_dockyard = -1.0
+            }
+        }
+        BUD_No_Research = {
+            picture = GFX_focus_research
+
+            allowed = {
+                tag = BUD
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            modifier = {
+                research_speed_factor = -1.0
+            }
+        }
+        BUD_No_Government = {
+            picture = REPLACE_ME
+
+            allowed = {
+                tag = BUD
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            modifier = {
+                political_power_gain = -1.0
+                stability_factor = -1.0
+                war_support_factor = -1.0
+            }
+        }
         BUD_Modern_Equipment = {
             picture = HUN_secret_rearmament
 

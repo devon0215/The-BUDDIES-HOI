@@ -11,6 +11,10 @@ set_technology = {
 
 set_convoys = 0
 
+add_ideas = BUD_No_Military
+add_ideas = BUD_No_Industry
+add_ideas = BUD_No_Research
+
 recruit_character = BUD_Saucy_Salmon
 recruit_character = BUD_Saucy_Salmon_Field_Marshal
 recruit_character = BUD_Saucy_Salmon_Navy_Leader
