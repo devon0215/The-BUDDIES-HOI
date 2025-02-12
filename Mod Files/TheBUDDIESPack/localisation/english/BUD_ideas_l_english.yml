@@ -1,3 +1,9 @@
 ﻿l_english:
   BUD_Modern_Equipment:0 "Modern Equipment"
   BUD_Modern_Equipment_desc:0 "Modern equipment brought back from the future, §Rwe can only have so much of it...§!"
+  BUD_No_Industry:0 "No Industry"
+  BUD_No_Industry_desc:0 "We do not have control of the local industry."
+  BUD_No_Military:0 "No Military"
+  BUD_No_Military_desc:0 "We do not have a steady stream of manpower, or a chain of command currently."
+  BUD_No_Research:0 "No Research"
+  BUD_No_Research_desc:0 "We have no method of relearning these old technologies."

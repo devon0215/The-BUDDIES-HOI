@@ -241,4 +241,8 @@ focus_tree = {
             }
         }
     }
+
+    focus = {
+        
+    }
 }
