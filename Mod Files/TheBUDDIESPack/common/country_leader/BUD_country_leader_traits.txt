@@ -65,4 +65,24 @@ leader_traits = {
         army_armor_defence_factor = 0.1
         cas_damage_reduction = -0.05
     }
+
+    BUD_Trait_Biwwy_Leader = {
+        random = no
+    }
+
+    BUD_Trait_Biwwy_Advisor = {
+        random = no
+    }
+
+    BUD_Trait_Biwwy_Air_Chief = {
+        random = no
+    }
+
+    BUD_Trait_Biwwy_Army_Chief = {
+        random = no
+    }
+
+    BUD_Trait_Biwwy_Navy_Chief = {
+        random = no
+    }
 }

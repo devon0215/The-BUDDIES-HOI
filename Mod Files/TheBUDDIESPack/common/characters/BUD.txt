@@ -146,7 +146,6 @@ characters = {
             idea_token = BUD_Character_Strawberry_High_Command
             ledger = army
             traits = { BUD_Trait_Strawberry_High_Command }
-            visible = { has_completed_focus = BUD_Focus_Reinforcements }
         }
         corps_commander = {
             traits = { old_guard infantry_officer }
@@ -155,7 +154,6 @@ characters = {
             defense_skill = 2
             planning_skill = 3
             logistics_skill = 2
-            visible = { has_completed_focus = BUD_Focus_Reinforcements }
         }
     }
 
@@ -166,7 +164,6 @@ characters = {
             idea_token = BUD_Character_TJ_High_Command
             ledger = army
             traits = { BUD_Trait_TJ_High_Command }
-            visible = { has_completed_focus = BUD_Focus_Reinforcements }
         }
         corps_commander = {
             skill = 2
@@ -174,7 +171,44 @@ characters = {
             defense_skill = 2
             planning_skill = 1
             logistics_skill = 2
-            visible = { has_completed_focus = BUD_Focus_Reinforcements }
+        }
+    }
+
+    BUD_Biwwy = {
+        name = BUD_Character_Biwwy
+        portraits = {
+            civilian = {
+                large = REPLACE_ME
+                small = REPLACE_ME
+            }
+            army = {
+                large = REPLACE_ME
+                small = REPLACE_ME
+            }
+        }
+        country_leader = {
+            ideology = anarchist_communism
+            traits = { BUD_Trait_Biwwy_Leader }
+        }
+        advisor = {
+            slot = air_chief
+            idea_token = BUD_Character_Biwwy_Air_Chief
+            traits = { BUD_Trait_Biwwy_Air_Chief }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = BUD_Character_Biwwy_Advisor
+            traits = { BUD_Trait_Biwwy_Advisor }
+        }
+        advisor = {
+            slot = navy_chief
+            idea_token = BUD_Character_Biwwy_Navy_Chief
+            traits = { BUD_Trait_Biwwy_Navy_Chief }
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = BUD_Character_Biwwy_Army_Chief
+            traits = { BUD_Trait_Biwwy_Army_Chief }
         }
     }
 }

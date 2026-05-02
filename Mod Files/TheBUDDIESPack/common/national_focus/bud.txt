@@ -32,7 +32,6 @@ focus_tree = {
         completion_reward = {
             add_ideas = BUD_Modern_Equipment
             add_manpower = 10000
-
         }
     }
 

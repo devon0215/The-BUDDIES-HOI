@@ -4,4 +4,5 @@ tags={
 }
 name="The B.U.D.D.I.E.S. Pack"
 picture="thumbnail.png"
-supported_version="1.13"
+supported_version="1.17.*"
+path="C://users/steamuser/Documents/Paradox Interactive/Hearts of Iron IV/mod"

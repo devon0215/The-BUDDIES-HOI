@@ -53,7 +53,7 @@ ideas = {
             }
         }
         BUD_No_Government = {
-            picture = REPLACE_ME
+            picture = GFX_idea_FRA_matignon_agreements
 
             allowed = {
                 tag = BUD

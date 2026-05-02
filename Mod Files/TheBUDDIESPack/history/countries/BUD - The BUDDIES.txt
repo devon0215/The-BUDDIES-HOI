@@ -23,6 +23,7 @@ recruit_character = BUD_Devon_Field_Marshal
 recruit_character = BUD_Devon_Navy_Leader
 recruit_character = BUD_Strawberry
 recruit_character = BUD_TJ
+recruit_character = BUD_Biwwy
 
 set_politics = {
 	ruling_party = neutrality
